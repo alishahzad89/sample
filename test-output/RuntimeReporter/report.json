@@ -1,0 +1,80 @@
+{
+  "reportSummary": {
+    "testMethodsSummary": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "configurationMethodsSummary": {
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "testMethods": [
+    {
+      "parameters": [
+        "\"Title of your scenario - 1\"",
+        "\"Title of your feature\""
+      ],
+      "suite": "Suite",
+      "test": "Test",
+      "packageInfo": "com.mycompany.core",
+      "className": "RunCukesTestNG",
+      "methodName": "feature",
+      "status": "Passed",
+      "startTime": "2018-04-13T21:43:12.878+05:30",
+      "endTime": "2018-04-13T21:43:19.876+05:30",
+      "description": "Runs Cucumber Feature",
+      "logs": [
+        {
+          "message": "\u003cdiv \"result\"\u003eI want to write a \u0026lt;Balance\u0026gt; with precondition1 (PASSED : 0s)\u003c/div\u003e"
+        },
+        {
+          "message": "\u003cdiv \"result\"\u003eI want to write a \u0026lt;Account\u0026gt; with precondition2 (PASSED : 0s)\u003c/div\u003e"
+        }
+      ]
+    }
+  ],
+  "configurationMethods": [
+    {
+      "type": "BeforeClass",
+      "suite": "Suite",
+      "test": "Test",
+      "packageInfo": "com.mycompany.core",
+      "className": "RunCukesTestNG",
+      "methodName": "setUpClass",
+      "status": "Passed",
+      "startTime": "2018-04-13T21:43:11.708+05:30",
+      "endTime": "2018-04-13T21:43:12.748+05:30",
+      "description": ""
+    },
+    {
+      "type": "AfterClass",
+      "suite": "Suite",
+      "test": "Test",
+      "packageInfo": "com.mycompany.core",
+      "className": "RunCukesTestNG",
+      "methodName": "tearDownClass",
+      "status": "Passed",
+      "startTime": "2018-04-13T21:43:22.544+05:30",
+      "endTime": "2018-04-13T21:43:22.594+05:30",
+      "description": ""
+    }
+  ],
+  "configSummary": {
+    "currentDate": "2018-04-13T21:43:09.723+05:30"
+  },
+  "localConfigSummary": [
+    {
+      "currentDate": "2018-04-13T21:43:11.668+05:30",
+      "suite": "Suite",
+      "test": "Test"
+    }
+  ],
+  "reporterMetadata": {
+    "currentDate": {
+      "displayLabel": "Current Date"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="true">
+  <listeners>
+    <listener class-name="com.mycompany.core.TestNGListner"/>
+  </listeners>
+  <test name="Test(failed)" parallel="true">
+    <classes>
+      <class name="com.mycompany.core.RunCukesTestNG">
+        <methods>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.mycompany.core.RunCukesTestNG -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

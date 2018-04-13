@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">I want to write a &lt;Balance&gt; with precondition1 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I want to write a &lt;Account&gt; with precondition2 (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10957" started-at="2018-04-13T16:13:11Z" finished-at="2018-04-13T16:13:22Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="RunCukesTestNG.feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.mycompany.core.RunCukesTestNG@37374a5e]" name="feature" class="com.mycompany.core.RunCukesTestNG"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="10957" started-at="2018-04-13T16:13:11Z" finished-at="2018-04-13T16:13:22Z">
+      <class name="com.mycompany.core.RunCukesTestNG">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.mycompany.core.RunCukesTestNG@37374a5e]" name="setUpClass" is-config="true" duration-ms="1040" started-at="2018-04-13T21:43:11Z" finished-at="2018-04-13T21:43:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.mycompany.core.RunCukesTestNG@37374a5e]" name="feature" duration-ms="6998" started-at="2018-04-13T21:43:12Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-04-13T21:43:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario - 1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Title of your feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I want to write a &lt;Balance&gt; with precondition1 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I want to write a &lt;Account&gt; with precondition2 (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.mycompany.core.RunCukesTestNG@37374a5e]" name="tearDownClass" is-config="true" duration-ms="50" started-at="2018-04-13T21:43:22Z" finished-at="2018-04-13T21:43:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.mycompany.core.RunCukesTestNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

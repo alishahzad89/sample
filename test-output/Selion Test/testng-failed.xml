@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Selion Test]" parallel="classes" data-provider-thread-count="1">
+  <parameter name="browser" value="*firefox"/>
+  <parameter name="runLocally" value="true"/>
+  <test name="SampleTest(failed)" parallel="classes">
+    <classes>
+      <class name="com.mycompany.test.Demo">
+        <methods>
+          <include name="DemoTest1"/>
+        </methods>
+      </class> <!-- com.mycompany.test.Demo -->
+    </classes>
+  </test> <!-- SampleTest(failed) -->
+</suite> <!-- Failed suite [Selion Test] -->
