@@ -75,8 +75,6 @@ public class TestNGListner implements ISuiteListener, IInvokedMethodListener, IT
 	@Override
 	public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
 
-		java.util.List<java.util.List<String>> raw = Arrays.asList( Arrays.asList("h1", "h2"), Arrays.asList("v1", "v2") ); 
-		DataTable dataTable = DataTable.create(raw, Locale.getDefault(), "h1", "h2");
 
 	}
 

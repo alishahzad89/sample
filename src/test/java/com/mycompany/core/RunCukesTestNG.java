@@ -5,8 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.mycompany.core.testdata.ScenarioTestData;
-
+import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.PickleEventWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
@@ -26,16 +25,12 @@ import gherkin.pickles.PickleTag;
 ////dryRun = true,
 //monochrome = true
 //)
-
-
 public class RunCukesTestNG {
     private TestNGCucumberRunner testNGCucumberRunner;
 
     @BeforeClass(alwaysRun = true)
     public void setUpClass() throws Exception {
-        testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-        ScenarioTestData dat=new ScenarioTestData();
-        dat.addDataToTable();
+        testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());   
     }
     
     @Test(groups = "cucumber", description = "Runs Cucumber Feature", dataProvider = "features")
@@ -53,7 +48,7 @@ public class RunCukesTestNG {
     	}
     	
         try {
-			testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
+			testNGCucumberRunner.runScenario(pickleEventWrapper.getPickleEvent());
 		} catch (Throwable e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -62,7 +57,7 @@ public class RunCukesTestNG {
 
     @DataProvider
     public Object[][] features() {
-    	
+    	System.out.println(testNGCucumberRunner.provideScenarios().length);
         return testNGCucumberRunner.provideScenarios();
     }
 

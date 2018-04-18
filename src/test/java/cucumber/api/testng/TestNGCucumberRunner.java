@@ -57,7 +57,6 @@ public class TestNGCucumberRunner {
 		list.add("MyStepdef");
 			
 		list.add("src/test/resources/features/Feature1.feature");
-//		list.add("src/test/resources/features/Feature2.feature");
 		
 		System.out.println("feature file added");
 		
