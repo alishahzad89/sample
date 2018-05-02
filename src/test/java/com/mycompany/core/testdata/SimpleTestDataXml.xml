@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcases>
+<testcase-124>
+	<testdata>
+		<balance>500</balance>
+		<account>saving</account>
+		<branch>pune</branch>
+	</testdata>
+
+	<testdata>
+		<balance>600</balance>
+		<account>demat</account>
+		<branch>jaipur</branch>
+	</testdata>
+
+	<testdata>
+		<balance>700</balance>
+		<account>salary</account>
+		<branch>rajasthan</branch>
+	</testdata>
+
+</testcase-124>
+
+</testcases>

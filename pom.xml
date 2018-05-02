@@ -11,80 +11,40 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<selion.version>1.2.0</selion.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<!-- Optional, required when you want to use a SeLion SNAPSHOT version -->
-	<repositories>
-		<repository>
-			<id>sonatype-nexus-snapshots</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
-
-		<repository>
-			<id>sonatype-snapshots</id>
-			<url>https://github.com/cucumber/cucumber-jvm</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-
-	</repositories>
-
-	<!-- Optional, required when you want to use a SeLion maven plugin SNAPSHOT 
-		version -->
-	<pluginRepositories>
-		<pluginRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</pluginRepository>
-	</pluginRepositories>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>com.paypal.selion</groupId>
-				<artifactId>SeLion-Project-BOM</artifactId>
-				<version>${selion.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
 	<dependencies>
-
-
-
 		<dependency>
-			<groupId>com.paypal.selion</groupId>
-			<artifactId>SeLion</artifactId>
-			<version>${selion.version}</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
 		</dependency>
 
-
 		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.9.4</version>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8</version>
+
 		</dependency>
 
-
-		<!-- Required only for local runs -->
 		<dependency>
-			<groupId>com.paypal.selion</groupId>
-			<artifactId>SeLion-Grid</artifactId>
-			<version>${selion.version}</version>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.11.0</version>
 		</dependency>
 
-		<!-- Required only for local runs -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-server</artifactId>
+			<version>3.11.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>4.1.2</version>
 		</dependency>
 
 		<dependency>
@@ -99,11 +59,6 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>2.3.1</version>
 			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
 		</dependency>
 
 		<dependency>
@@ -130,8 +85,24 @@
 			</exclusions>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.17</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20180130</version>
+		</dependency>
+
+
 
 	</dependencies>
+
 
 	<build>
 		<pluginManagement>

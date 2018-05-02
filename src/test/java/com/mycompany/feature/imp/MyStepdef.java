@@ -13,7 +13,7 @@ import cucumber.api.java.en.Then;
 public class MyStepdef {
 
 	@Given("I want to write a \"([^\\\"]*)\" with precondition(\\d+)")
-	public void i_want_to_write_a_step_with_precondition1(String str,DataFacotry i) throws Exception {
+	public void i_want_to_write_a_step_with_precondition1(String str) throws Exception {
 		
 		System.out.println("sys - I want to write a step with precondition " +str );
 		
@@ -52,22 +52,22 @@ public class MyStepdef {
 		Reporter.log("this is testng log");
 	}
 	
-	@Given("^I want to write a (.*) with precondition1$")
-	public void i_want_to_write_a_with_precondition1(String arg1) throws Exception {
-		System.out.println("first step balance "+ScenarioTestData.getMap().get(arg1.replace("<","").replace(">", "")));
-	}
-
-	@Then("^check below Numbers$")
-	public void check_below_Numbers(DataTable arg1) throws Exception {
-		System.out.println("DataTable "+arg1);
-	}
-	
-	@Given("^I want to write a (.*) with precondition2$")
-	public void i_want_to_write_a_with_precondition2(String arg1,DataTable table) throws Exception {
-		
-		System.out.println("first step Account "+ScenarioTestData.getMap().get(arg1.replace("<","").replace(">", "")));
-	    System.out.println(table);
-	}
+//	@Given("^I want to write a (.*) with precondition1$")
+//	public void i_want_to_write_a_with_precondition1(String arg1) throws Exception {
+//		System.out.println("first step balance "+ScenarioTestData.getMap().get(arg1.replace("<","").replace(">", "")));
+//	}
+//
+//	@Then("^check below Numbers$")
+//	public void check_below_Numbers(DataTable arg1) throws Exception {
+//		System.out.println("DataTable "+arg1);
+//	}
+//	
+//	@Given("^I want to write a (.*) with precondition2$")
+//	public void i_want_to_write_a_with_precondition2(String arg1,DataTable table) throws Exception {
+//		
+//		System.out.println("first step Account "+ScenarioTestData.getMap().get(arg1.replace("<","").replace(">", "")));
+//	    System.out.println(table);
+//	}
 
 	
 
